@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home page</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function prepareFood(tableno,items,callback) {
+			console.log("Preparing food for items-", items);	
+			callback(tableno,items);
+		}
+		function serveFood(tableno,items){
+			console.log("Serving food for items-", items);
+		}
+		prepareFood(5,["Burger","Pasta","Coke"],serveFood);
+	</script>
+</body>
+</html>
